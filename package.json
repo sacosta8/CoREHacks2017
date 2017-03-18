@@ -1,0 +1,19 @@
+{
+  "name": "corehacks2017",
+  "version": "1.0.0",
+  "description": "CoREHacks2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sacosta8/CoREHacks2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sacosta8/CoREHacks2017/issues"
+  },
+  "homepage": "https://github.com/sacosta8/CoREHacks2017#readme"
+}
