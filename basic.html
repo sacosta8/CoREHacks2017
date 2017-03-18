@@ -8,36 +8,79 @@
     <script src = "node_modules/jquery/dist/jquery.min.js" type = "text/javascript"></script>
     <title>Basic HTML File</title>
     <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.min.css" type = "text/css"></link>
-    <style type="text/css">
-    p{
-        padding: 30px;
-        font-size: 32px;
-        font-weight: bold;
-        text-align: left;
-        background: #dbdfe5;
-    }
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" type = "text/css"></link>
+    <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <style>
     h1 {
-        padding: 10px;
+        padding: 100px;
         font-size: 100px;
         font-weight: bold;
         font-family: "Arial Black",Gadget, sans-serif;
         color: Blue;
     }
     body {
-      background-color: rgba(0,5,100,0.75);
     }
 </style>
 </head>
 <body>
     <h1>Scheduler</h1>
-    <button  class="Selector" data-toggle="buttons-checkbox">
-      <button type= "button" class = "Selector">Monday</button>
-      <button type= "button" class = "Selector">Tuesday</button>
-      <button type= "button" class = "Selector">Wednesday</button>
-      <button type= "button" class = "Selector">Thursday</button>
-      <button type= "button" class = "Selector">Friday</button>
-      <button type= "button" class = "Selector">Saturday</button>
-      <button type= "button" class = "Selector">Sunday</button>
+    <div class = "ui top attached tabular menu">
+      <a class = "item" data-tab="Monday">Monday</a>
+      <a class = "item" data-tab="Tuesday">Tuesday</a>
+      <a class = "item" data-tab="Wednesday">Wednesday</a>
+      <a class = "item" data-tab="Thursday">Thursday</a>
+      <a class = "item" data-tab="Friday">Friday</a>
+      <a class = "item" data-tab="Saturday">Saturday</a>
+      <a class = "item" data-tab="Sunday">Sunday</a>
+    <div class="ui bottom attached tab segment" data-tab="Monday">
+      Add Schedule
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="Tuesday">
+      Add Schedule
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="Wednesday">
+      Add Schedule
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="Thursday">
+      Add Schedule
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="Friday">
+      Add Schedule
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="Saturday">
+      Add Schedule
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="Sunday">
+      Add Schedule
+    </div>
+    <div class="ui left demo vertical inverted sidebar labeled icon menu">
+      <a class="item">
+        <i class="home icon"></i>
+        Home
+      </a>
+      <a class="item">
+        <i class="block layout icon"></i>
+        Enter a schedule
+      </a>
+    </div>
+    <div class = "ui grid">
+      <div class = "four wide column grid"></div>
+      <div class = "four wide column grid"></div>
+      <div class = "four wide column grid"></div>
+      <div class="two wide column"></div>
+      <div class="eight wide column"></div>
+      <div class="six wide column"></div>
+    </div>
+    <div class = "ui input">
+      <div class = "ui pointing label">Please enter the time of the event</div>
+      <input type="text" placeholder="hours">
+      <input type="text" placehoder="minutes">
+    </div>
+    <div class = "ui input">
+      <div class = "ui pointing label">Enter the event</div>
+      <input type="text">
+    </div>
+<script type = "text/javascript" src = "js/setup.js"></script>
 </body>
 
 </div>
