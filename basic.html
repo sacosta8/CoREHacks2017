@@ -12,76 +12,85 @@
     <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
     <style>
     h1 {
-        padding: 100px;
-        font-size: 100px;
+        padding: 10px;
+        font-size: 90px;
+        padding-top: 90px;
+        text-align: center;
         font-weight: bold;
         font-family: "Arial Black",Gadget, sans-serif;
-        color: Blue;
+        color: #FF7216;
     }
-    body {
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        font-family: "Verdana",Geneva,sans-serif;
     }
-</style>
+    hr {
+      display: block;
+      align: center;
+      color: Black;
+    }
+    p {
+        font-size: 20px;
+        text-align: center;
+        font-family: "Arial", Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .pusher {
+      background: linear-gradient(#8C1717,#DB2929,#CD2626)!important;
+      min-height: 100%;
+    }
+    </style>
 </head>
 <body>
-    <h1>Scheduler</h1>
-    <div class = "ui top attached tabular menu">
-      <a class = "item" data-tab="Monday">Monday</a>
-      <a class = "item" data-tab="Tuesday">Tuesday</a>
-      <a class = "item" data-tab="Wednesday">Wednesday</a>
-      <a class = "item" data-tab="Thursday">Thursday</a>
-      <a class = "item" data-tab="Friday">Friday</a>
-      <a class = "item" data-tab="Saturday">Saturday</a>
-      <a class = "item" data-tab="Sunday">Sunday</a>
-    <div class="ui bottom attached tab segment" data-tab="Monday">
-      Add Schedule
-    </div>
-    <div class="ui bottom attached tab segment" data-tab="Tuesday">
-      Add Schedule
-    </div>
-    <div class="ui bottom attached tab segment" data-tab="Wednesday">
-      Add Schedule
-    </div>
-    <div class="ui bottom attached tab segment" data-tab="Thursday">
-      Add Schedule
-    </div>
-    <div class="ui bottom attached tab segment" data-tab="Friday">
-      Add Schedule
-    </div>
-    <div class="ui bottom attached tab segment" data-tab="Saturday">
-      Add Schedule
-    </div>
-    <div class="ui bottom attached tab segment" data-tab="Sunday">
-      Add Schedule
-    </div>
-    <div class="ui left demo vertical inverted sidebar labeled icon menu">
-      <a class="item">
+    <div class="ui sidebar vertical left inverted icon menu" id = "sidebar">
+      <a href="#" class="item">
         <i class="home icon"></i>
         Home
       </a>
-      <a class="item">
-        <i class="block layout icon"></i>
-        Enter a schedule
+      <a href="javascript:" class="item">Monday</a>
+      <a href="#" class="item">Tuesday</a>
+      <a href="#" class="item">Wednesday</a>
+      <a href="#" class="item">Thursday</a>
+      <a href="#" class="item">Friday</a>
+      <a href="#" class="item">Saturday</a>
+      <a href="#" class="item">Sunday</a>
+    </div>
+
+    <div class = "ui basic inverted icon top fixed menu">
+      <a id="toggle" class="item">
+        <i class = "sidebar icon"></i>
+        Menu
       </a>
     </div>
-    <div class = "ui grid">
-      <div class = "four wide column grid"></div>
-      <div class = "four wide column grid"></div>
-      <div class = "four wide column grid"></div>
-      <div class="two wide column"></div>
-      <div class="eight wide column"></div>
-      <div class="six wide column"></div>
+
+    <!--Content of site-->
+    <div class = "pusher">
+        <h1>Scheduler</h1>
+        <hr>
+        <h2 id = "Hello">Hello, Current User!</h2>
+        <p id = "description">Select the day in the sidebar to edit the schedule for that day</p>
     </div>
-    <div class = "ui input">
-      <div class = "ui pointing label">Please enter the time of the event</div>
-      <input type="text" placeholder="hours">
-      <input type="text" placehoder="minutes">
-    </div>
-    <div class = "ui input">
-      <div class = "ui pointing label">Enter the event</div>
-      <input type="text">
-    </div>
-<script type = "text/javascript" src = "js/setup.js"></script>
+    <!--End Content of site-->
+
+
+  <script type = "text/javascript" src = "js/index.js"></script>
 </body>
+
+<script>
+  $(this).ready(function(){
+    $('#toggle').click(function(){
+      $('#sidebar').sidebar('toggle');
+    });
+    $('#Monday').click(function(){
+      $('.h1').hide();
+    })
+  })
+
+
+
+</script>
 
 </div>
 </html>
